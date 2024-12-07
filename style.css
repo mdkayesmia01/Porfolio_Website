@@ -1,0 +1,114 @@
+   /* General Reset */
+   body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #0a0a0a;
+    color: #fff;
+    scroll-behavior: smooth;
+    overflow: hidden;
+  }
+
+  /* Navigation */
+  nav ul {
+    display: flex;
+    justify-content: center;
+    padding: 15px 0;
+    background: #1a1a1a;
+    list-style: none;
+    position: fixed;
+    top: -15px;
+    width: 100%;
+    z-index: 1000;
+  }
+
+  nav ul li {
+    margin: 0 15px;
+  }
+
+  nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+
+  nav ul li a:hover {
+    color: #00d9ff;
+  }
+
+  /* Hero Section */
+  #home {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100vh;
+    padding: 50px;
+    position: relative;
+  }
+
+  .intro {
+    max-width: 50%;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.5s ease-out;
+  }
+
+  .intro h1 {
+    font-size: 2rem;
+  }
+
+  .intro h2 {
+    font-size: 3rem;
+    color: #00d9ff;
+  }
+
+  .role {
+    color: #00d9ff;
+  }
+
+  .social-icons {
+    margin: 20px 0;
+  }
+
+  .social-icons a {
+    width: 30px;
+    margin: 0 10px;
+  }
+
+  .download-cv {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background: #00d9ff;
+    color: #0a0a0a;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+  }
+
+  .download-cv:hover {
+    background: #008bb5;
+  }
+
+  /* Circle Image */
+  .circle-image {
+    position: absolute;
+    top: 30%;
+    right: 5%;
+    transform: translateY(-50%);
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    background: url('kayes.jpg') no-repeat center center/cover;
+    border: 8px solid #00d9ff;
+    box-shadow: 0 0 30px #00d9ff;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.5s ease-out;
+  }
+
+  /* Animation Activation */
+  .animate {
+    opacity: 1;
+    transform: translateY(0);
+  }
